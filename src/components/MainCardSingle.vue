@@ -11,13 +11,13 @@ const username = faker.internet.userName({firstName: firstname, lastName:lastnam
 
 <template>
     <RouterLink :to="{name: 'CardDetails', params: {id: username}}">
-    <div class="border border-gray-400 rounded-lg shadow h-full">
-        <img :src="faker.image.urlLoremFlickr({category: 'cat'})" class="rounded-t-xl" />
-        <div class="p-4">
-            <p class="mb-2 text-2xl font-bold">{{ fullname }}</p>
-            <p class="mb-3 font-normal text-gray-700">{{ job_title }}</p>
-            <p class="mb-3 font-normal text-gray-700">{{ bio }}</p>
+        <div class="border border-gray-400 rounded-lg shadow h-full">
+            <img :src="faker.image.urlLoremFlickr({category: 'cat'})" class="rounded-t-xl" />
+            <div class="p-4">
+                <p class="mb-2 text-2xl font-bold">{{ fullname }}</p>
+                <p class="mb-3 font-normal text-gray-700">{{ job_title }}</p>
+                <p class="mb-3 font-normal text-gray-700">{{ bio }}</p>
+            </div>
         </div>
-    </div>
     </RouterLink>
 </template>
